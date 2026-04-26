@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8faff"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d3856"/>
+      <stop offset="100%" stop-color="#0a2c44"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a03a"/>
+      <stop offset="100%" stop-color="#b67c20"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b67c20" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#b67c20" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0d3856" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="520" fill="url(#bgGrad)" rx="24"/>
+
+  <!-- Decorative dots grid -->
+  <g opacity="0.4">
+    <circle cx="60" cy="60" r="2" fill="#0d3856"/>
+    <circle cx="120" cy="60" r="2" fill="#0d3856"/>
+    <circle cx="180" cy="60" r="2" fill="#0d3856"/>
+    <circle cx="60" cy="120" r="2" fill="#0d3856"/>
+    <circle cx="540" cy="60" r="2" fill="#0d3856"/>
+    <circle cx="540" cy="120" r="2" fill="#0d3856"/>
+    <circle cx="540" cy="460" r="2" fill="#0d3856"/>
+    <circle cx="480" cy="460" r="2" fill="#0d3856"/>
+    <circle cx="60" cy="460" r="2" fill="#0d3856"/>
+  </g>
+
+  <!-- Big decorative circle -->
+  <circle cx="480" cy="90" r="70" fill="#b67c20" opacity="0.08"/>
+  <circle cx="120" cy="420" r="50" fill="#0d3856" opacity="0.06"/>
+
+  <!-- ========== MAIN DASHBOARD CARD ========== -->
+  <g filter="url(#softShadow)">
+    <rect x="90" y="120" width="340" height="220" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Card header -->
+    <rect x="90" y="120" width="340" height="50" rx="18" fill="url(#navyGrad)"/>
+    <rect x="90" y="150" width="340" height="20" fill="url(#navyGrad)"/>
+    <circle cx="112" cy="145" r="5" fill="#d4a03a"/>
+    <text x="128" y="150" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Studio Consulente del Lavoro</text>
+
+    <!-- Metrics row -->
+    <g transform="translate(110, 190)">
+      <text font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#64748b" letter-spacing="1">AZIENDE SEGUITE</text>
+      <text y="22" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#0d3856">28</text>
+      <rect y="34" width="80" height="3" rx="1.5" fill="#e2e8f0"/>
+      <rect y="34" width="56" height="3" rx="1.5" fill="#0d3856"/>
+    </g>
+    <g transform="translate(250, 190)">
+      <text font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#64748b" letter-spacing="1">VALORE ATTIVATO</text>
+      <text y="22" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="#b67c20">+18%</text>
+      <rect y="34" width="80" height="3" rx="1.5" fill="#fdf6e9"/>
+      <rect y="34" width="66" height="3" rx="1.5" fill="#b67c20"/>
+    </g>
+
+    <!-- Chart -->
+    <g transform="translate(110, 250)">
+      <path d="M0 60 Q30 55 60 48 T120 32 T180 18 T240 6 T300 2" stroke="#b67c20" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M0 60 Q30 55 60 48 T120 32 T180 18 T240 6 T300 2 L300 72 L0 72 Z" fill="url(#chartGrad)"/>
+      <circle cx="300" cy="2" r="5" fill="#b67c20"/>
+      <circle cx="300" cy="2" r="9" fill="#b67c20" opacity="0.2"/>
+    </g>
+  </g>
+
+  <!-- ========== SERVICE CHIPS (floating) ========== -->
+  <!-- Fondo Conoscenza -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="260" width="130" height="44" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="54" cy="282" r="12" fill="#0d3856"/>
+    <path d="M48 282l4 4 8-8" stroke="#d4a03a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="72" y="278" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#64748b">FORMAZIONE</text>
+    <text x="72" y="294" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0d3856">Fondo interprof.</text>
+  </g>
+
+  <!-- Medi-Prev -->
+  <g filter="url(#softShadow)">
+    <rect x="440" y="180" width="130" height="44" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="464" cy="202" r="12" fill="#b67c20"/>
+    <path d="M460 198h8v8h-8z M462 196v12M458 202h12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <text x="482" y="198" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#64748b">SANITARIO</text>
+    <text x="482" y="214" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0d3856">Medi-Prev</text>
+  </g>
+
+  <!-- Bilateralità -->
+  <g filter="url(#softShadow)">
+    <rect x="440" y="320" width="130" height="44" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="464" cy="342" r="12" fill="#0d3856"/>
+    <path d="M456 342h16M464 334v16" stroke="#d4a03a" stroke-width="2" stroke-linecap="round"/>
+    <text x="482" y="338" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#64748b">BILATERALE</text>
+    <text x="482" y="354" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0d3856">EB-Work</text>
+  </g>
+
+  <!-- Assistenza Contrattuale -->
+  <g filter="url(#softShadow)">
+    <rect x="100" y="380" width="150" height="44" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="124" cy="402" r="12" fill="#b67c20"/>
+    <path d="M119 398h10v2h-10zM119 402h10v2h-10zM119 406h7v2h-7z" fill="#ffffff"/>
+    <text x="142" y="398" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#64748b">ASSISTENZA</text>
+    <text x="142" y="414" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0d3856">Contrattuale</text>
+  </g>
+
+  <!-- Connection lines (subtle) -->
+  <g stroke="#b67c20" stroke-width="1" stroke-dasharray="2 3" opacity="0.4">
+    <path d="M160 282 L230 230"/>
+    <path d="M440 202 L380 230"/>
+    <path d="M440 342 L380 310"/>
+    <path d="M175 380 L230 310"/>
+  </g>
+
+  <!-- Decorative sparkles -->
+  <g fill="#b67c20">
+    <path d="M520 280 L524 290 L534 294 L524 298 L520 308 L516 298 L506 294 L516 290 Z" opacity="0.6"/>
+    <circle cx="70" cy="200" r="3" opacity="0.6"/>
+    <circle cx="560" cy="420" r="4" opacity="0.6"/>
+  </g>
+
+  <!-- Bottom label "STUDIO" -->
+  <g transform="translate(250, 450)">
+    <rect x="-50" y="-14" width="100" height="28" rx="14" fill="#0d3856"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#d4a03a" letter-spacing="2">STUDIO</text>
+  </g>
+</svg>

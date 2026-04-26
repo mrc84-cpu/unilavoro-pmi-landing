@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 580" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgP" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8faff"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="navyG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e4f78"/>
+      <stop offset="100%" stop-color="#0d3856"/>
+    </linearGradient>
+    <linearGradient id="goldG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a03a"/>
+      <stop offset="100%" stop-color="#b67c20"/>
+    </linearGradient>
+    <radialGradient id="spotGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#b67c20" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#b67c20" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadowCard" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0d3856" flood-opacity="0.14"/>
+    </filter>
+    <filter id="shadowPerson" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0d3856" flood-opacity="0.18"/>
+    </filter>
+    <!-- Skin tone palette -->
+    <linearGradient id="skin1"><stop stop-color="#f4c99b"/></linearGradient>
+    <linearGradient id="skin2"><stop stop-color="#d8a177"/></linearGradient>
+    <linearGradient id="skin3"><stop stop-color="#b87a4a"/></linearGradient>
+    <linearGradient id="skin4"><stop stop-color="#f0b987"/></linearGradient>
+    <linearGradient id="skin5"><stop stop-color="#e6b68d"/></linearGradient>
+    <linearGradient id="skin6"><stop stop-color="#c48a5e"/></linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="580" fill="url(#bgP)" rx="24"/>
+
+  <!-- Dot grid decoration -->
+  <g opacity="0.25" fill="#0d3856">
+    <circle cx="40" cy="40" r="1.5"/><circle cx="80" cy="40" r="1.5"/>
+    <circle cx="440" cy="40" r="1.5"/><circle cx="480" cy="40" r="1.5"/>
+    <circle cx="40" cy="540" r="1.5"/><circle cx="480" cy="540" r="1.5"/>
+  </g>
+
+  <!-- Ambient glow -->
+  <ellipse cx="260" cy="350" rx="240" ry="180" fill="url(#spotGlow)"/>
+
+  <!-- ============ TOP BADGE: 130.000 IMPRESE ============ -->
+  <g transform="translate(110, 40)" filter="url(#shadowCard)">
+    <rect width="300" height="100" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+    <rect width="300" height="5" rx="2.5" fill="url(#goldG)"/>
+    <text x="150" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#b67c20" letter-spacing="3">IMPRESE ASSOCIATE</text>
+    <text x="150" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="900" fill="#0d3856" letter-spacing="-2">130.000</text>
+    <text x="150" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="500" fill="#64748b">di ogni settore, su tutto il territorio italiano</text>
+  </g>
+
+  <!-- Connector line under badge -->
+  <line x1="260" y1="150" x2="260" y2="175" stroke="#b67c20" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="260" cy="175" r="4" fill="#b67c20"/>
+
+  <!-- Arc connecting all sectors -->
+  <path d="M 80 320 Q 260 180 440 320" stroke="#b67c20" stroke-width="1" stroke-dasharray="4 4" opacity="0.4" fill="none"/>
+
+  <!-- ============ CHARACTER 1: CONSULENTE / UFFICIO (left) ============ -->
+  <g transform="translate(40, 200)" filter="url(#shadowPerson)">
+    <!-- Ground shadow -->
+    <ellipse cx="40" cy="230" rx="38" ry="6" fill="#0d3856" opacity="0.15"/>
+
+    <!-- Body (suit navy) -->
+    <path d="M 10 150 L 10 225 L 70 225 L 70 150 Z" fill="#0d3856"/>
+    <path d="M 10 150 C 10 135, 20 125, 40 125 C 60 125, 70 135, 70 150 Z" fill="#0d3856"/>
+
+    <!-- Shirt collar (white) -->
+    <path d="M 30 125 L 40 145 L 50 125 L 50 135 L 40 150 L 30 135 Z" fill="#ffffff"/>
+    <!-- Tie (gold) -->
+    <path d="M 38 145 L 36 180 L 40 195 L 44 180 L 42 145 Z" fill="#b67c20"/>
+
+    <!-- Neck -->
+    <rect x="35" y="110" width="10" height="18" fill="#f4c99b"/>
+
+    <!-- Head -->
+    <circle cx="40" cy="95" r="22" fill="#f4c99b"/>
+    <!-- Hair -->
+    <path d="M 20 92 C 18 78, 28 72, 40 72 C 52 72, 62 78, 60 92 L 58 85 C 52 80, 28 80, 22 85 Z" fill="#2a1810"/>
+    <!-- Glasses -->
+    <circle cx="32" cy="95" r="5" stroke="#0d3856" stroke-width="1.5" fill="none"/>
+    <circle cx="48" cy="95" r="5" stroke="#0d3856" stroke-width="1.5" fill="none"/>
+    <line x1="37" y1="95" x2="43" y2="95" stroke="#0d3856" stroke-width="1.5"/>
+    <!-- Smile -->
+    <path d="M 34 104 Q 40 108 46 104" stroke="#0d3856" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+
+    <!-- Laptop in hand -->
+    <rect x="4" y="175" width="24" height="16" rx="2" fill="#b0bec5"/>
+    <rect x="4" y="188" width="26" height="3" rx="1" fill="#78909c"/>
+    <rect x="7" y="178" width="18" height="10" fill="#0d3856"/>
+  </g>
+
+  <!-- Sector label -->
+  <g transform="translate(40, 445)">
+    <rect width="80" height="22" rx="11" fill="#0d3856"/>
+    <text x="40" y="15" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ffffff" letter-spacing="1">SERVIZI</text>
+  </g>
+
+  <!-- ============ CHARACTER 2: OPERAIO / INDUSTRIA ============ -->
+  <g transform="translate(140, 220)" filter="url(#shadowPerson)">
+    <ellipse cx="40" cy="210" rx="38" ry="6" fill="#0d3856" opacity="0.15"/>
+
+    <!-- Body (overalls) -->
+    <path d="M 10 130 L 10 205 L 70 205 L 70 130 Z" fill="#b67c20"/>
+    <!-- Shirt under (navy) -->
+    <rect x="10" y="130" width="60" height="30" fill="#0d3856"/>
+    <!-- Strap -->
+    <rect x="24" y="128" width="6" height="50" fill="#8b5e18"/>
+    <rect x="50" y="128" width="6" height="50" fill="#8b5e18"/>
+    <circle cx="27" cy="140" r="2" fill="#d4a03a"/>
+    <circle cx="53" cy="140" r="2" fill="#d4a03a"/>
+    <!-- Pocket -->
+    <rect x="42" y="155" width="18" height="16" rx="2" fill="#8b5e18" opacity="0.6"/>
+
+    <!-- Neck -->
+    <rect x="35" y="105" width="10" height="15" fill="#d8a177"/>
+
+    <!-- Head -->
+    <circle cx="40" cy="90" r="22" fill="#d8a177"/>
+    <!-- Beard -->
+    <path d="M 24 95 Q 26 110, 32 112 L 48 112 Q 54 110, 56 95 Z" fill="#3a2820"/>
+    <!-- Hard hat (yellow/gold) -->
+    <path d="M 18 80 C 18 65, 25 58, 40 58 C 55 58, 62 65, 62 80 L 62 82 L 18 82 Z" fill="#d4a03a"/>
+    <rect x="16" y="79" width="48" height="5" rx="2" fill="#b67c20"/>
+    <!-- Hat band -->
+    <rect x="22" y="75" width="36" height="2" fill="#b67c20"/>
+    <!-- Face (visible between hat and beard) -->
+    <!-- Eyes -->
+    <circle cx="33" cy="93" r="1.5" fill="#0d3856"/>
+    <circle cx="47" cy="93" r="1.5" fill="#0d3856"/>
+
+    <!-- Wrench tool in hand -->
+    <g transform="translate(-2, 170) rotate(-15)">
+      <rect x="0" y="0" width="22" height="4" rx="1" fill="#78909c"/>
+      <path d="M 20 -3 L 28 -3 L 28 7 L 20 7 L 20 4 L 24 4 L 24 0 L 20 0 Z" fill="#78909c"/>
+    </g>
+  </g>
+
+  <!-- Sector label -->
+  <g transform="translate(140, 445)">
+    <rect width="80" height="22" rx="11" fill="#0d3856"/>
+    <text x="40" y="15" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ffffff" letter-spacing="1">INDUSTRIA</text>
+  </g>
+
+  <!-- ============ CHARACTER 3: MEDICO / SANITÀ ============ -->
+  <g transform="translate(240, 200)" filter="url(#shadowPerson)">
+    <ellipse cx="40" cy="230" rx="38" ry="6" fill="#0d3856" opacity="0.15"/>
+
+    <!-- Lab coat (white) -->
+    <path d="M 10 150 L 8 225 L 72 225 L 70 150 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <path d="M 10 150 C 10 135, 20 125, 40 125 C 60 125, 70 135, 70 150 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <!-- Center split -->
+    <line x1="40" y1="148" x2="40" y2="225" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Buttons -->
+    <circle cx="40" cy="160" r="1.5" fill="#cbd5e1"/>
+    <circle cx="40" cy="175" r="1.5" fill="#cbd5e1"/>
+    <circle cx="40" cy="190" r="1.5" fill="#cbd5e1"/>
+    <!-- Pocket with pen -->
+    <rect x="48" y="168" width="14" height="14" rx="1" stroke="#cbd5e1" stroke-width="0.8" fill="none"/>
+    <rect x="54" y="166" width="2" height="10" fill="#b67c20"/>
+
+    <!-- Shirt visible at neck (teal) -->
+    <path d="M 30 125 L 40 145 L 50 125 Z" fill="#0d9488"/>
+
+    <!-- Neck -->
+    <rect x="35" y="110" width="10" height="18" fill="#b87a4a"/>
+
+    <!-- Head -->
+    <circle cx="40" cy="95" r="22" fill="#b87a4a"/>
+    <!-- Hair (dark, long-ish) -->
+    <path d="M 18 95 C 16 72, 26 68, 40 68 C 54 68, 64 72, 62 95 C 60 88, 56 82, 40 82 C 24 82, 20 88, 18 95 Z" fill="#1a0e08"/>
+    <!-- Earrings -->
+    <circle cx="19" cy="100" r="1.5" fill="#d4a03a"/>
+    <circle cx="61" cy="100" r="1.5" fill="#d4a03a"/>
+    <!-- Eyes -->
+    <circle cx="32" cy="95" r="1.5" fill="#0d3856"/>
+    <circle cx="48" cy="95" r="1.5" fill="#0d3856"/>
+    <!-- Smile -->
+    <path d="M 34 104 Q 40 108 46 104" stroke="#0d3856" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+
+    <!-- Stethoscope -->
+    <path d="M 28 148 C 22 160, 22 175, 28 185 Q 40 195, 52 185 C 58 175, 58 160, 52 148"
+          stroke="#0d3856" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="40" cy="195" r="5" fill="#d4a03a" stroke="#0d3856" stroke-width="1.5"/>
+    <circle cx="40" cy="195" r="2" fill="#0d3856"/>
+  </g>
+
+  <!-- Sector label -->
+  <g transform="translate(240, 445)">
+    <rect width="80" height="22" rx="11" fill="#0d3856"/>
+    <text x="40" y="15" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ffffff" letter-spacing="1">SANITÀ</text>
+  </g>
+
+  <!-- ============ CHARACTER 4: RISTORAZIONE / CHEF ============ -->
+  <g transform="translate(340, 215)" filter="url(#shadowPerson)">
+    <ellipse cx="40" cy="215" rx="38" ry="6" fill="#0d3856" opacity="0.15"/>
+
+    <!-- Chef jacket (white double-breasted) -->
+    <path d="M 10 145 L 10 210 L 70 210 L 70 145 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <path d="M 10 145 C 10 130, 20 122, 40 122 C 60 122, 70 130, 70 145 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <!-- Double buttons -->
+    <circle cx="32" cy="160" r="2" fill="#0d3856"/>
+    <circle cx="48" cy="160" r="2" fill="#0d3856"/>
+    <circle cx="32" cy="178" r="2" fill="#0d3856"/>
+    <circle cx="48" cy="178" r="2" fill="#0d3856"/>
+    <!-- Neckerchief -->
+    <path d="M 28 125 L 40 145 L 52 125 L 50 135 L 40 150 L 30 135 Z" fill="#b67c20"/>
+
+    <!-- Neck -->
+    <rect x="35" y="100" width="10" height="18" fill="#f0b987"/>
+
+    <!-- Head -->
+    <circle cx="40" cy="87" r="22" fill="#f0b987"/>
+    <!-- Chef hat (toque) -->
+    <ellipse cx="40" cy="58" rx="26" ry="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <ellipse cx="30" cy="50" rx="8" ry="10" fill="#ffffff"/>
+    <ellipse cx="50" cy="50" rx="8" ry="10" fill="#ffffff"/>
+    <ellipse cx="40" cy="46" rx="8" ry="10" fill="#ffffff"/>
+    <!-- Hat band -->
+    <rect x="16" y="72" width="48" height="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Moustache -->
+    <path d="M 30 102 Q 34 98 40 100 Q 46 98 50 102 Q 46 104 40 102 Q 34 104 30 102 Z" fill="#3a2820"/>
+    <!-- Eyes -->
+    <circle cx="33" cy="90" r="1.5" fill="#0d3856"/>
+    <circle cx="47" cy="90" r="1.5" fill="#0d3856"/>
+
+    <!-- Plate/dish in hand -->
+    <ellipse cx="65" cy="185" rx="14" ry="3" fill="#cbd5e1"/>
+    <ellipse cx="65" cy="182" rx="12" ry="3" fill="#ffffff"/>
+    <circle cx="62" cy="180" r="2" fill="#b67c20"/>
+    <circle cx="68" cy="181" r="1.5" fill="#16a34a"/>
+  </g>
+
+  <!-- Sector label -->
+  <g transform="translate(340, 445)">
+    <rect width="80" height="22" rx="11" fill="#0d3856"/>
+    <text x="40" y="15" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ffffff" letter-spacing="1">RISTORAZIONE</text>
+  </g>
+
+  <!-- ============ CHARACTER 5: COMMERCIO (right) ============ -->
+  <g transform="translate(440, 210)" filter="url(#shadowPerson)">
+    <ellipse cx="40" cy="220" rx="38" ry="6" fill="#0d3856" opacity="0.15"/>
+
+    <!-- Apron -->
+    <path d="M 14 145 L 12 215 L 68 215 L 66 145 Z" fill="#1e4f78"/>
+    <!-- Shirt visible at sides -->
+    <rect x="6" y="145" width="10" height="70" fill="#d4a03a"/>
+    <rect x="64" y="145" width="10" height="70" fill="#d4a03a"/>
+    <!-- Apron strap -->
+    <path d="M 20 135 L 32 125 L 48 125 L 60 135 L 66 145 L 14 145 Z" fill="#0d3856"/>
+    <!-- Apron pocket -->
+    <rect x="28" y="170" width="24" height="18" rx="2" fill="#0a2c44"/>
+    <!-- Logo on apron -->
+    <circle cx="40" cy="155" r="5" fill="#d4a03a"/>
+
+    <!-- Neck -->
+    <rect x="35" y="100" width="10" height="16" fill="#e6b68d"/>
+
+    <!-- Head -->
+    <circle cx="40" cy="87" r="22" fill="#e6b68d"/>
+    <!-- Hair (ponytail, blonde/brown) -->
+    <path d="M 18 85 C 16 65, 28 58, 40 58 C 52 58, 64 65, 62 85 L 58 78 C 52 72, 28 72, 22 78 Z" fill="#8b6239"/>
+    <ellipse cx="62" cy="95" rx="4" ry="8" fill="#8b6239"/>
+    <!-- Eyes -->
+    <circle cx="33" cy="88" r="1.5" fill="#0d3856"/>
+    <circle cx="47" cy="88" r="1.5" fill="#0d3856"/>
+    <!-- Smile -->
+    <path d="M 34 98 Q 40 102 46 98" stroke="#0d3856" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+
+    <!-- Shopping bag in hand -->
+    <g transform="translate(-4, 175)">
+      <rect x="0" y="4" width="18" height="20" rx="1" fill="#d4a03a"/>
+      <path d="M 3 4 C 3 0, 15 0, 15 4" stroke="#0d3856" stroke-width="1.5" fill="none"/>
+      <rect x="2" y="10" width="14" height="2" fill="#b67c20"/>
+    </g>
+  </g>
+
+  <!-- Sector label -->
+  <g transform="translate(440, 445)">
+    <rect width="80" height="22" rx="11" fill="#0d3856"/>
+    <text x="40" y="15" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ffffff" letter-spacing="1">COMMERCIO</text>
+  </g>
+
+  <!-- ============ BOTTOM STRIP: "di ogni settore" ============ -->
+  <g transform="translate(60, 495)" filter="url(#shadowCard)">
+    <rect width="400" height="56" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+    <g transform="translate(20, 20)">
+      <circle r="16" fill="#fdf6e9"/>
+      <path d="M -8 0 L -3 5 L 8 -6" stroke="#b67c20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+    <text x="48" y="25" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#b67c20" letter-spacing="1">OGNI SETTORE, OGNI DIMENSIONE</text>
+    <text x="48" y="42" font-family="Inter, sans-serif" font-size="10" font-weight="500" fill="#64748b">Servizi · Industria · Sanità · Ristorazione · Commercio · Artigianato</text>
+  </g>
+
+  <!-- Decorative sparkles -->
+  <g fill="#b67c20" opacity="0.7">
+    <path d="M 30 380 L 33 388 L 41 391 L 33 394 L 30 402 L 27 394 L 19 391 L 27 388 Z"/>
+    <circle cx="490" cy="380" r="4"/>
+  </g>
+</svg>
