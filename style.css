@@ -1603,3 +1603,161 @@ h1, h2, h3, h4 {
     order: 1;
   }
 }
+
+/* =============================================
+   MOBILE OPTIMIZATIONS — under 768px / under 480px
+   ============================================= */
+
+@media (max-width: 767px) {
+  /* Tighter container padding */
+  .container { padding: 0 18px; }
+
+  /* Section spacing */
+  .section { padding: 56px 0; }
+  .hero { padding: 40px 0 56px; }
+
+  /* Section header spacing */
+  .section-header { margin-bottom: 32px; }
+  .section-title { margin-bottom: 14px; }
+
+  /* Hero */
+  .hero-eyebrow { font-size: 0.72rem; padding: 6px 12px; }
+  .hero-sub { font-size: 1rem; line-height: 1.6; margin-bottom: 24px; }
+  .hero-ctas { gap: 10px; }
+  .hero-ctas .btn { width: 100%; }
+
+  /* Hero visual badges — bring inside the image so they don't overflow */
+  .hero-image-wrap { padding: 18px 12px; }
+  .hero-badge--tl { top: 4px; left: 4px; padding: 10px 14px; }
+  .hero-badge--br { bottom: 4px; right: 4px; padding: 10px 14px; font-size: 0.78rem; }
+  .hero-badge-number { font-size: 1.2rem; }
+  .hero-badge-label { font-size: 0.7rem; }
+  .hero-badge--br svg { width: 18px; height: 18px; }
+
+  /* Hero proof cards */
+  .hero-proof { gap: 10px; padding-top: 22px; margin-top: 24px; }
+  .hero-proof li { padding: 14px 16px; gap: 10px; font-size: 0.98rem; }
+  .proof-icon { width: 22px; height: 22px; }
+
+  /* Buttons full width */
+  .btn { padding: 14px 20px; font-size: 0.95rem; }
+  .cta-row .btn,
+  .cta-buttons .btn { width: 100%; max-width: 360px; }
+  .cta-row, .cta-buttons { width: 100%; }
+  .cta-row--spaced { margin-top: 40px; }
+
+  /* Stats grid (chi-siamo): single column avoids cramped numbers */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+
+  /* Tool cards: compact, no oversized number */
+  .tool-card { padding: 24px 20px; }
+  .tool-number { font-size: 1.6rem; top: 16px; right: 18px; }
+  .tool-kicker { padding-right: 44px; }
+  .tool-title { font-size: 1.18rem; padding-right: 44px; }
+  .tool-text { font-size: 0.92rem; }
+
+  /* Benefit cards */
+  .benefit-card { padding: 22px 20px; }
+  .benefit-icon { width: 48px; height: 48px; margin-bottom: 14px; }
+  .benefit-icon svg { width: 26px; height: 26px; }
+  .benefit-card h3 { font-size: 1.08rem; }
+
+  /* Step items */
+  .step-item { gap: 16px; padding: 22px 18px; }
+  .step-index { width: 44px; height: 44px; font-size: 0.95rem; border-radius: 10px; }
+  .step-body h3 { font-size: 1.05rem; }
+  .step-body p { font-size: 0.92rem; }
+  .step-list { padding-left: 4px; }
+  .step-list li { font-size: 0.9rem; }
+
+  /* Notice card (UniEmens) */
+  .notice-card { padding: 32px 22px; }
+  .notice-icon { width: 60px; height: 60px; margin-bottom: 18px; }
+  .notice-icon svg { width: 32px; height: 32px; }
+  .principle-box { padding: 18px 20px; margin-top: 22px; }
+  .principle-box li { font-size: 0.92rem; }
+
+  /* Bullet lists / closing notes */
+  .bullet-list { padding: 18px 20px; margin: 18px auto 24px; }
+  .bullet-list li { font-size: 0.94rem; }
+  .closing-note { padding: 16px 18px; font-size: 0.95rem; }
+
+  /* Form */
+  .lead-form { padding: 22px 18px; margin-top: 24px; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea { padding: 12px 13px; font-size: 16px; }
+  .btn-submit { padding: 14px; font-size: 1rem; }
+
+  /* FAQ */
+  .faq-q { padding: 16px 18px; font-size: 0.96rem; }
+  .faq-a { padding: 0 18px 18px; font-size: 0.93rem; }
+  .faq-list-bullets li { font-size: 0.9rem; }
+
+  /* Match / Esempio blocks */
+  .match-header { padding: 16px 18px; font-size: 0.98rem; }
+  .match-list { padding: 16px 18px; }
+  .example-disclaimer { font-size: 0.85rem; padding: 10px 14px; }
+  .example-block,
+  .example-phase { padding: 22px 20px; }
+  .example-block-title { font-size: 1rem; }
+  .example-phase-stats { gap: 10px; margin: 12px 0; }
+  .example-stat { padding: 12px 8px; }
+  .example-stat-value { font-size: 1.3rem; }
+  .example-stat-label { font-size: 0.74rem; }
+  .example-total { padding: 22px 18px; margin-top: 24px; }
+  .example-total-label { font-size: 0.78rem; }
+  .example-total-value { font-size: 1.4rem; }
+  .example-total-text { font-size: 0.82rem; }
+
+  /* Example transition arrow more compact when stacked */
+  .example-transition { padding: 16px 18px; gap: 10px; }
+  .example-transition-arrow { width: 70px; height: 28px; }
+
+  /* Quote box */
+  .quote-box { padding: 18px 22px; font-size: 1.02rem; }
+
+  /* Section labels smaller */
+  .section-label { font-size: 0.7rem; padding: 5px 12px; margin-bottom: 14px; }
+
+  /* Footer */
+  .site-footer { padding: 48px 0 20px; }
+  .footer-top { gap: 28px; padding-bottom: 28px; }
+  .footer-logo { height: 34px; }
+
+  /* Header */
+  .header-inner { height: 64px; }
+  .logo-img { height: 32px; }
+  .nav-cta { padding: 9px 16px; font-size: 0.86rem; }
+
+  /* Tools grid gap */
+  .tools-grid { gap: 16px; }
+
+  /* Modello intro spacing */
+  .modello-intro { margin: 18px auto 24px; }
+  .benefits-grid--3 { margin-top: 28px; }
+
+  /* Split grid gap on mobile */
+  .split-grid { gap: 32px; }
+
+  /* Image shadow lighter on mobile */
+  .split-image, .split-image--svg { box-shadow: var(--shadow-md); }
+}
+
+/* Very small screens — phones under ~380px */
+@media (max-width: 380px) {
+  .container { padding: 0 14px; }
+  .hero-title { font-size: 1.85rem; }
+  .section-title { font-size: 1.45rem; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .example-stat-value { font-size: 1.2rem; }
+}
+
+/* Prevent horizontal overflow on any device */
+html, body { overflow-x: hidden; }
+img, svg { max-width: 100%; }
