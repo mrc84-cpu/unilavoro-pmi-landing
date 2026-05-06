@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgVa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8faff"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="navyVa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e4f78"/>
+      <stop offset="100%" stop-color="#0d3856"/>
+    </linearGradient>
+    <linearGradient id="goldVa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a03a"/>
+      <stop offset="100%" stop-color="#b67c20"/>
+    </linearGradient>
+    <radialGradient id="glowVa" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#b67c20" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#b67c20" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shVa" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0d3856" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="520" height="520" rx="32" fill="url(#bgVa)"/>
+  <circle cx="260" cy="260" r="220" fill="url(#glowVa)"/>
+
+  <!-- Chart card with growth bars -->
+  <g filter="url(#shVa)">
+    <rect x="80" y="120" width="360" height="240" rx="18" fill="#fff" stroke="#dde4ec" stroke-width="2"/>
+    <!-- Header bar -->
+    <rect x="80" y="120" width="360" height="50" rx="18" fill="url(#navyVa)"/>
+    <rect x="80" y="155" width="360" height="15" fill="url(#navyVa)"/>
+    <text x="105" y="152" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">Ricorrenza economica</text>
+    <circle cx="410" cy="145" r="8" fill="#b67c20"/>
+
+    <!-- Growth bars -->
+    <rect x="115" y="300" width="40" height="40" rx="4" fill="#0d3856" opacity="0.5"/>
+    <rect x="170" y="275" width="40" height="65" rx="4" fill="#0d3856" opacity="0.7"/>
+    <rect x="225" y="240" width="40" height="100" rx="4" fill="#0d3856"/>
+    <rect x="280" y="210" width="40" height="130" rx="4" fill="url(#goldVa)"/>
+    <rect x="335" y="185" width="40" height="155" rx="4" fill="url(#goldVa)"/>
+
+    <!-- Trend line -->
+    <path d="M135 295 L190 270 L245 235 L300 205 L355 180" stroke="#b67c20" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="135" cy="295" r="5" fill="#b67c20"/>
+    <circle cx="190" cy="270" r="5" fill="#b67c20"/>
+    <circle cx="245" cy="235" r="5" fill="#b67c20"/>
+    <circle cx="300" cy="205" r="5" fill="#b67c20"/>
+    <circle cx="355" cy="180" r="6" fill="#b67c20" stroke="#fff" stroke-width="2"/>
+
+    <!-- Baseline -->
+    <line x1="100" y1="345" x2="420" y2="345" stroke="#dde4ec" stroke-width="1.5"/>
+  </g>
+
+  <!-- Euro coins floating -->
+  <g filter="url(#shVa)">
+    <circle cx="395" cy="100" r="38" fill="url(#goldVa)"/>
+    <text x="395" y="116" font-family="Inter, sans-serif" font-size="36" font-weight="900" fill="#fff" text-anchor="middle">€</text>
+  </g>
+  <g filter="url(#shVa)">
+    <circle cx="100" cy="400" r="32" fill="url(#goldVa)"/>
+    <text x="100" y="414" font-family="Inter, sans-serif" font-size="30" font-weight="900" fill="#fff" text-anchor="middle">€</text>
+  </g>
+
+  <!-- Bottom badge -->
+  <g filter="url(#shVa)">
+    <rect x="170" y="420" width="180" height="50" rx="25" fill="#fff" stroke="#dde4ec" stroke-width="2"/>
+    <circle cx="200" cy="445" r="10" fill="url(#goldVa)"/>
+    <path d="M196 445l3 3 5-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="260" y="451" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#0d3856" text-anchor="middle">+ valore studio</text>
+  </g>
+</svg>

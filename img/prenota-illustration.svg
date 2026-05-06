@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="bgPn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8faff"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="navyPn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e4f78"/>
+      <stop offset="100%" stop-color="#0d3856"/>
+    </linearGradient>
+    <linearGradient id="goldPn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a03a"/>
+      <stop offset="100%" stop-color="#b67c20"/>
+    </linearGradient>
+    <radialGradient id="glowPn" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#b67c20" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#b67c20" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shPn" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0d3856" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="520" height="520" rx="32" fill="url(#bgPn)"/>
+  <circle cx="260" cy="260" r="220" fill="url(#glowPn)"/>
+
+  <!-- Calendar -->
+  <g filter="url(#shPn)">
+    <rect x="100" y="120" width="320" height="280" rx="16" fill="#fff" stroke="#dde4ec" stroke-width="2"/>
+    <!-- Header -->
+    <rect x="100" y="120" width="320" height="60" rx="16" fill="url(#navyPn)"/>
+    <rect x="100" y="155" width="320" height="25" fill="url(#navyPn)"/>
+    <text x="125" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">Calendario</text>
+    <circle cx="395" cy="150" r="9" fill="#b67c20"/>
+
+    <!-- Day labels -->
+    <text x="135" y="205" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#6b7c8c" text-anchor="middle">L</text>
+    <text x="180" y="205" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#6b7c8c" text-anchor="middle">M</text>
+    <text x="225" y="205" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#6b7c8c" text-anchor="middle">M</text>
+    <text x="270" y="205" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#6b7c8c" text-anchor="middle">G</text>
+    <text x="315" y="205" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#6b7c8c" text-anchor="middle">V</text>
+    <text x="360" y="205" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#6b7c8c" text-anchor="middle">S</text>
+    <text x="395" y="205" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#6b7c8c" text-anchor="middle">D</text>
+
+    <!-- Calendar dots/numbers - row 1 -->
+    <text x="135" y="232" font-family="Inter, sans-serif" font-size="12" fill="#9aa6b3" text-anchor="middle">1</text>
+    <text x="180" y="232" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">2</text>
+    <text x="225" y="232" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">3</text>
+    <text x="270" y="232" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">4</text>
+    <text x="315" y="232" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">5</text>
+    <text x="360" y="232" font-family="Inter, sans-serif" font-size="12" fill="#9aa6b3" text-anchor="middle">6</text>
+    <text x="395" y="232" font-family="Inter, sans-serif" font-size="12" fill="#9aa6b3" text-anchor="middle">7</text>
+
+    <!-- Row 2 -->
+    <text x="135" y="262" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">8</text>
+    <text x="180" y="262" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">9</text>
+    <text x="225" y="262" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">10</text>
+    <text x="270" y="262" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">11</text>
+    <text x="315" y="262" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">12</text>
+    <text x="360" y="262" font-family="Inter, sans-serif" font-size="12" fill="#9aa6b3" text-anchor="middle">13</text>
+    <text x="395" y="262" font-family="Inter, sans-serif" font-size="12" fill="#9aa6b3" text-anchor="middle">14</text>
+
+    <!-- Row 3 with selected day (gold) -->
+    <text x="135" y="292" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">15</text>
+    <text x="180" y="292" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">16</text>
+    <circle cx="225" cy="287" r="16" fill="url(#goldPn)"/>
+    <text x="225" y="292" font-family="Inter, sans-serif" font-size="13" font-weight="900" fill="#fff" text-anchor="middle">17</text>
+    <text x="270" y="292" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">18</text>
+    <text x="315" y="292" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">19</text>
+    <text x="360" y="292" font-family="Inter, sans-serif" font-size="12" fill="#9aa6b3" text-anchor="middle">20</text>
+    <text x="395" y="292" font-family="Inter, sans-serif" font-size="12" fill="#9aa6b3" text-anchor="middle">21</text>
+
+    <!-- Row 4 -->
+    <text x="135" y="322" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">22</text>
+    <text x="180" y="322" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">23</text>
+    <text x="225" y="322" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">24</text>
+    <text x="270" y="322" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">25</text>
+    <text x="315" y="322" font-family="Inter, sans-serif" font-size="12" fill="#0d3856" text-anchor="middle">26</text>
+
+    <!-- Booked time slot -->
+    <rect x="120" y="345" width="280" height="42" rx="10" fill="url(#navyPn)"/>
+    <circle cx="142" cy="366" r="11" fill="url(#goldPn)"/>
+    <path d="M137 366l3 3 6-7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="165" y="362" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#fff">17 marzo · 15:30</text>
+    <text x="165" y="378" font-family="Inter, sans-serif" font-size="11" fill="#b9c8d6">Confronto riservato</text>
+  </g>
+
+  <!-- Floating message bubble -->
+  <g filter="url(#shPn)">
+    <path d="M385 80 h60 a14 14 0 0 1 14 14 v34 a14 14 0 0 1 -14 14 h-46 l-14 12 v-12 a14 14 0 0 1 0 -28 v-20 a14 14 0 0 1 0 -14 z" fill="url(#goldPn)"/>
+    <circle cx="406" cy="111" r="3" fill="#fff"/>
+    <circle cx="418" cy="111" r="3" fill="#fff"/>
+    <circle cx="430" cy="111" r="3" fill="#fff"/>
+  </g>
+
+  <!-- Bottom badge -->
+  <g filter="url(#shPn)">
+    <rect x="160" y="430" width="200" height="50" rx="25" fill="url(#navyPn)"/>
+    <text x="260" y="461" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">CONFRONTO RISERVATO</text>
+  </g>
+</svg>
