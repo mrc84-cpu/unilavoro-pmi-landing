@@ -1230,6 +1230,12 @@ h1, h2, h3, h4 {
   color: var(--text);
 }
 
+/* ---------- Centered intro paragraph (Il modello, Strumenti) ---------- */
+.modello-intro {
+  max-width: 720px;
+  margin: 24px auto 32px;
+}
+
 /* ---------- Benefits grid 3 cols (Il modello) ---------- */
 .benefits-grid--3 {
   margin-top: 48px;
