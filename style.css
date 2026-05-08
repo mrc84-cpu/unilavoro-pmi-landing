@@ -1415,6 +1415,13 @@ h1, h2, h3, h4 {
   border-radius: 999px;
   margin-bottom: 16px;
 }
+.example-result-label {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
 .example-phase p {
   font-size: 0.98rem;
   color: var(--text);
